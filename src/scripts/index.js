@@ -44,7 +44,9 @@ const createCard = (array) => {
     artist.innerHTML = array.band
     year.innerHTML = array.year
     h3.innerHTML = array.title
-    price.innerHTML = array.price
+    let albumPrice = Number(array.price)
+    let formatedAlbumPrice = albumPrice.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}); 
+    price.innerHTML = formatedAlbumPrice
     button.innerHTML = 'Comprar'
 
     // Assigning classes to the elements
@@ -118,7 +120,10 @@ const filterByRange = (array) => {
     inputRange.addEventListener('input', () => {
         const p = document.querySelector('#price')
 
-        p.innerHTML = inputRange.value
+        let value = Number(inputRange.value)
+        let formatedValue = value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        p.innerHTML = formatedValue
+    
         
         const productFilter = array.filter(product => product.price <= Number(inputRange.value))
         renderCard(productFilter)
