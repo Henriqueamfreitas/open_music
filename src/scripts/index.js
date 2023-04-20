@@ -1,5 +1,6 @@
 const filterButtonsSpace = document.querySelector('.mainGender__buttons')
 const ulAlbuns = document.querySelector('.main__albuns')
+const empty = document.querySelector('.empty')
 
 // Renderizing the filter buttons 
 const createButtons = (array) => {
@@ -73,8 +74,6 @@ const renderCard = (array) => {
         const card = createCard(element)
         ulAlbuns.append(card)
     })
-    genderFilter(products)
-    filterByRange(products)
 }
 
 
@@ -91,11 +90,22 @@ filterButtons.forEach((button) => {
                 const categoryIndex = categories.indexOf(category)
                 const filteredProducts = array.filter(product => product.category === categoryIndex)
                 renderCard((filteredProducts))
+                // console.log(filteredProducts.length)
+                let classStyle = 'exclude'
+                empty.classList.add(classStyle)
+                if(filteredProducts.length === 0){
+                        empty.classList.remove(classStyle)
+                }
             }
         })
         // We are creating the logic for the button 'todos'
         if(button.innerHTML === categories[0]){
+            let classStyle = 'exclude'
             renderCard((array))
+            empty.classList.add(classStyle)
+            if(array.length === 0){
+                    empty.classList.remove(classStyle)
+            }
         }
     })
 })}
@@ -111,14 +121,19 @@ const filterByRange = (array) => {
         p.innerHTML = inputRange.value
         
         const productFilter = array.filter(product => product.price <= Number(inputRange.value))
-        console.log(productFilter)
         renderCard(productFilter)
+        let classStyle = 'exclude'
+        empty.classList.add(classStyle)
+        if(productFilter.length === 0){
+                empty.classList.remove(classStyle)
+        }
+
     })
 }
 
 
-// genderFilter(products)
-// filterByRange(products)
+genderFilter(products)
+filterByRange(products)
 renderCard(products)
 // li
 // img
