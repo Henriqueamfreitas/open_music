@@ -14,7 +14,7 @@ const createButtons = (array) => {
         button.innerHTML = element
         
         // Assigning classes to the elements
-        button.classList = 'gender__button'
+        button.classList = 'gender__button text-3'
         
         // Assigning IDs to the elements
         button.id = count
@@ -53,12 +53,12 @@ const createCard = (array) => {
     li.classList = 'mainAlbuns__card'
     img.classList = 'card__img'
     albumDetails.classList = 'card__albumDetails'
-    artist.classList = 'albumDetails__artist'
-    year.classList = 'albumDetails__year'
-    h3.classList = 'card__h3'
+    artist.classList = 'albumDetails__artist text-4'
+    year.classList = 'albumDetails__year text-4'
+    h3.classList = 'card__h3 title-2'
     albumPriceBuy.classList = 'card__albumPriceBuy'
-    price.classList = 'albumPriceBuy__price'
-    button.classList = 'albumPriceBuy__button'
+    price.classList = 'albumPriceBuy__price text-2'
+    button.classList = 'albumPriceBuy__button text-3'
 
     // Establishing the hierarchy between the elements
     li.append(img, albumDetails, h3, albumPriceBuy)
@@ -140,12 +140,3 @@ const filterByRange = (array) => {
 genderFilter(products)
 filterByRange(products)
 renderCard(products)
-// li
-// img
-// albumDetails
-// artist
-// year
-// h3
-// albumPriceBuy
-// price
-// button

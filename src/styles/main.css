@@ -1,0 +1,55 @@
+/* main */
+/* main__gender */
+.main__gender{}
+
+.mainGender__h2{}
+
+.mainGender__buttons{}
+
+.gender__button{}
+
+
+/* main__price */
+.main__price{}
+
+.mainLimit__price{}
+
+.limitPrice__h2{}
+
+.limitPrice__price{}
+
+.price__p{}
+
+#price{}
+
+#mainPrice__inputRange{}
+
+
+/* main__h2 */
+.main__h2{}
+
+
+/* main__albuns */
+.main__albuns{}
+
+.mainAlbuns__card{}
+
+.card__img{}
+
+.card__albumDetails{}
+
+.albumDetails__artist{}
+
+.albumDetails__year{}
+
+.card__h3{}
+
+.card__albumPriceBuy{}
+
+.albumPriceBuy__price{}
+
+.albumPriceBuy__button{}
+
+
+/* empty */
+.empty{}
