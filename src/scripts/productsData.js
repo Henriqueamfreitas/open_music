@@ -3,7 +3,7 @@ const products = [
     title: "Magnetite",
     category: 8,
     price: 89.0,
-    img: "../assets/img/1.jpg",
+    img: "../img/1.jpg",
     band: "Scalene",
     year: 2017,
     id: 0,
@@ -51,3 +51,8 @@ const categories = [
   "Country",
   "Gospel",
 ];
+
+const buttonImg = {
+  sunImg: '../assets/img/moon.svg',
+  moonImg: "../assets/img/moon.svg",
+}

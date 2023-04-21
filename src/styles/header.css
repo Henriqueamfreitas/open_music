@@ -2,13 +2,25 @@
 .header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4.0625rem;
 }
 
-.header__h1{}
+.header__h1{
+    color: var(--color-grey-1);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 
-.header__button{}
+.header__button{
+    cursor: pointer;
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    border: none;
+    border-radius: var(--radius-1);
+    padding: .5rem;
+}
 
-.button__img{}
+/* .button__img{} */
 
 
 

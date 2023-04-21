@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html  lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,39 +18,36 @@
   </head>
   <body>
     <div class="container">
-    <header class="header">
-      <h1 class="header__h1 title-1">open music</h1>
-      <button class="header__button">
-        <img class="button__img" src="" alt="">
-        test
-      </button>
-    </header>
+      <header class="header">
+        <h1 class="header__h1 title-1">open music</h1>
+        <button class="header__button">
+          <!-- <img class="button__img" src="./src/assets/img/moon.svg" alt="Dark-mode"> -->
+        </button>
+      </header>
     
-    <main>
-      <div class="main__gender">
-        <h2 class="mainGender__h2 title-2">Gênero Musical</h2>
-        <div class="mainGender__buttons">
-
-        </div>
-      </div>
-
-      <div class="main__price">
-        <div class="mainLimit__price">
-          <h2 class="limitPrice__h2 title-2">Definir preço</h2>
-          <div class="limitPrice__price">
-            <p class="price__p text-1">Até</p>
-            <p id="price" class="text-1"></p>
+      <main>
+        <div class="main__gender">
+          <h2 class="mainGender__h2 title-2">Gênero Musical</h2>
+          <div class="mainGender__buttons">
           </div>
         </div>
-        <input id="mainPrice__inputRange" type="range" min="0" max="100" step="1" value="0">
-      </div>
 
-      <h2 class="main__h2 title-2">Albuns encontrados</h2>
-      <ul class="main__albuns">
+        <div class="main__price">
+          <div class="mainLimit__price">
+            <h2 class="limitPrice__h2 title-2">Definir preço</h2>
+            <div class="limitPrice__price">
+              <p class="price__p text-1">Até</p>
+              <p id="price" class="text-1"></p>
+            </div>
+          </div>
+          <input id="mainPrice__inputRange" type="range" min="0" max="100" step="1" value="0">
+        </div>
 
-      </ul>
-      <p class="empty exclude">Nenhum album encontrado</p>
-    </main>
-  </div>
+        <h2 class="main__h2 title-2">Albuns encontrados</h2>
+        <ul class="main__albuns">
+        </ul>
+        <p class="empty exclude">Nenhum album encontrado</p>
+      </main>
+   </div>
   </body>
 </html>
