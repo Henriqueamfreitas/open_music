@@ -1,36 +1,28 @@
-/* open music */
 .title-1{
     font-size: var(--font-1);
     font-weight: var(--font-weight-1);
 }
 
-/* gênero musical, Definir preço, Albuns Encontrados, title */
 .title-2{
     font-size: var(--font-2);
     font-weight: var(--font-weight-1);
 }
 
-
-
-/* Até R$ preço */
 .text-1{
     font-size: var(--font-2);
     font-weight: var(--font-weight-2);
 }
 
-/* price */
 .text-2{
     font-size: var(--font-3);
     font-weight: var(--font-weight-1);
 }
 
-/* buttons music gender, comprarButton */
 .text-3{
     font-size: var(--font-3);
     font-weight: var(--font-weight-2);
 }
 
-/* year, band */
 .text-4{
     font-size: var(--font-4);
     font-weight: var(--font-weight-2);

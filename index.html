@@ -1,52 +1,51 @@
 <!DOCTYPE html>
-<html  lang="pt-br">
+<html  lang='pt-br'>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="/src/styles/reset.css" />
-    <link rel="stylesheet" href="/src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="/src/styles/text.css" />
-    <link rel="stylesheet" href="/src/styles/header.css" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
-    <!-- JS -->
-    <script src="./src/scripts/productsData.js" defer></script>
-    <script src="./src/scripts/index.js" defer></script>
-    <script src="./src/scripts/theme.js" defer></script>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <link rel='stylesheet' href='/src/styles/reset.css' />
+    <link rel='stylesheet' href='/src/styles/globalStyles.css' />
+    <link rel='stylesheet' href='/src/styles/text.css' />
+    <link rel='stylesheet' href='/src/styles/header.css' />
+    <link rel='stylesheet' href='/src/styles/main.css' />
+
+    <script src='./src/scripts/productsData.js' defer></script>
+    <script src='./src/scripts/index.js' defer></script>
+    <script src='./src/scripts/theme.js' defer></script>
     <title>Open Music</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <h1 class="header__h1 title-1">open music</h1>
-        <button class="header__button">
-          <!-- <img class="button__img" src="./src/assets/img/moon.svg" alt="Dark-mode"> -->
+    <div class='container'>
+      <header class='header'>
+        <h1 class='header__h1 title-1'>open music</h1>
+        <button class='header__button'>
         </button>
       </header>
     
       <main>
-        <div class="main__gender">
-          <h2 class="mainGender__h2 title-2">Gênero Musical</h2>
-          <div class="mainGender__buttons">
+        <div class='main__gender'>
+          <h2 class='mainGender__h2 title-2'>Gênero Musical</h2>
+          <div class='mainGender__buttons'>
           </div>
         </div>
 
-        <div class="main__price">
-          <div class="mainLimit__price">
-            <h2 class="limitPrice__h2 title-2">Definir preço</h2>
-            <div class="limitPrice__price">
-              <p class="price__p text-1">Até</p>
-              <p id="price" class="text-1"></p>
+        <div class='main__price'>
+          <div class='mainLimit__price'>
+            <h2 class='limitPrice__h2 title-2'>Definir preço</h2>
+            <div class='limitPrice__price'>
+              <p class='price__p text-1'>Até</p>
+              <p id='price' class='text-1'></p>
             </div>
           </div>
-          <input id="mainPrice__inputRange" type="range" min="0" max="100" step="1" value="0">
+          <input id='mainPrice__inputRange' type='range' min='0' max='100' step='1' value='0'>
         </div>
 
-        <h2 class="main__h2 title-2">Albuns encontrados</h2>
-        <ul class="main__albuns">
+        <h2 class='main__h2 title-2'>Albuns encontrados</h2>
+        <ul class='main__albuns'>
         </ul>
-        <p class="empty exclude">Nenhum album encontrado</p>
+        <p class='empty exclude'>Nenhum album encontrado</p>
       </main>
    </div>
   </body>

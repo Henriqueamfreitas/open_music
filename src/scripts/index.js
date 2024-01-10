@@ -2,33 +2,25 @@ const filterButtonsSpace = document.querySelector('.mainGender__buttons')
 const ulAlbuns = document.querySelector('.main__albuns')
 const empty = document.querySelector('.empty')
 
-// Renderizing the filter buttons 
 const createButtons = (array) => {
     let count = 0
     array.forEach((element) => {
         count+=1
-        // Creating HTML element
         const  button = document.createElement('button')
         
-        // Assigning values to the elements
         button.innerHTML = element
         
-        // Assigning classes to the elements
         button.classList = 'gender__button text-3'
         
-        // Assigning IDs to the elements
         button.id = count
         
-        // Establishing the hierarchy between the elements
         filterButtonsSpace.append(button)
     })
 }
 createButtons(categories)
 
 
-// Creating the album card
 const createCard = (array) => {
-    // Creating HTML elements
     const li = document.createElement('li')
     const img = document.createElement('img')
     const albumDetails = document.createElement('div')
@@ -39,7 +31,6 @@ const createCard = (array) => {
     const price = document.createElement('p')
     const button = document.createElement('button')
 
-    // Assigning values to the elements
     img.src = array.img
     artist.innerHTML = array.band
     year.innerHTML = array.year
@@ -49,7 +40,6 @@ const createCard = (array) => {
     price.innerHTML = formatedAlbumPrice
     button.innerHTML = 'Comprar'
 
-    // Assigning classes to the elements
     li.classList = 'mainAlbuns__card'
     img.classList = 'card__img'
     albumDetails.classList = 'card__albumDetails'
@@ -60,7 +50,6 @@ const createCard = (array) => {
     price.classList = 'albumPriceBuy__price text-2'
     button.classList = 'albumPriceBuy__button text-3'
 
-    // Establishing the hierarchy between the elements
     li.append(img, albumDetails, h3, albumPriceBuy)
     albumDetails.append(artist, year)
     albumPriceBuy.append(price, button)
@@ -69,7 +58,6 @@ const createCard = (array) => {
 }
 
 
-// Renderizing the albuns
 const renderCard = (array) => {
     ulAlbuns.innerHTML = ''
     array.forEach((element) => {
@@ -79,12 +67,10 @@ const renderCard = (array) => {
 }
 
 
-// Adding event to buttons
 const filterButtons = document.querySelectorAll('.gender__button')
 const genderFilter = (array) =>{ 
 filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
-        // We are creating a new array without the category 'all'
         const categoriesWithoutAll = [... categories]
         categoriesWithoutAll.shift()
         categoriesWithoutAll.forEach((category) => {
@@ -92,7 +78,6 @@ filterButtons.forEach((button) => {
                 const categoryIndex = categories.indexOf(category)
                 const filteredProducts = array.filter(product => product.category === categoryIndex)
                 renderCard((filteredProducts))
-                // console.log(filteredProducts.length)
                 let classStyle = 'exclude'
                 empty.classList.add(classStyle)
                 if(filteredProducts.length === 0){
@@ -100,7 +85,6 @@ filterButtons.forEach((button) => {
                 }
             }
         })
-        // We are creating the logic for the button 'todos'
         if(button.innerHTML === categories[0]){
             let classStyle = 'exclude'
             renderCard((array))
@@ -113,7 +97,6 @@ filterButtons.forEach((button) => {
 })}
 
 
-// Range Input
 const filterByRange = (array) => {
     const inputRange = document.querySelector('#mainPrice__inputRange')
 
@@ -132,10 +115,8 @@ const filterByRange = (array) => {
         if(productFilter.length === 0){
                 empty.classList.remove(classStyle)
         }
-
     })
 }
-
 
 genderFilter(products)
 filterByRange(products)
