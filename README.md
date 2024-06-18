@@ -6,4 +6,4 @@ Desenvolver uma aplicação de venda de discos, onde o usuário pode filtrar por
 
 
 **Tecnologias**: HTML, CSS, Javascript
-**Link**: https://henriqueamfreitas.github.io/open_music/
+**Link:** https://henriqueamfreitas.github.io/open_music/
